@@ -12,12 +12,14 @@ body {
 .card {
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-    color: #fff;
+    background: linear-gradient(135deg, #09203F, #537895);
+    color: #b3b3b3ad;
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+    box-shadow: 0 10px 20px rgba(128, 128, 128, 0.35);
+    transition: 0.5s;
 
 }
 
@@ -111,4 +113,6 @@ body {
     font-size: 14px;
     margin-top: 10px;
     display: none;
+    color: darkred;
+    font-size: large;
 }
