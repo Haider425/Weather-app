@@ -46,12 +46,14 @@ async function getWeather(city) {
 searchButton.addEventListener("click", () => {
   getWeather(searchBox.value);
 
-  if (searchBox.value == "") {
+  if (searchBox.value != "") {
+    document.querySelector(".weather").style.display = "block";
+    searchBox.blur();
+  } else {
     document.querySelector(".weather").style.display = "none";
     searchBox.focus();
   }
 
-  searchBox.blur();
 });
 
 searchBox.addEventListener("keyup", (event) => {
