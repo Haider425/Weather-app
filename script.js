@@ -48,6 +48,7 @@ searchButton.addEventListener("click", () => {
 
   if (searchBox.value == "") {
     document.querySelector(".weather").style.display = "none";
+    searchBox.focus();
   }
 
   searchBox.blur();
@@ -63,5 +64,6 @@ searchBox.addEventListener("keyup", (event) => {
 
   if (event.key == "Enter" && searchBox.value == "") {
     document.querySelector(".weather").style.display = "none";
+    searchBox.focus();
   }
 });
