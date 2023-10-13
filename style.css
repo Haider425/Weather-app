@@ -43,6 +43,7 @@ body {
     flex: 1;
     margin-right: 16px;
     font-size: 16px;
+    width: 100%;
 
 }
 
@@ -115,4 +116,58 @@ body {
     display: none;
     color: darkred;
     font-size: large;
+}
+
+@media (max-width: 400px) {
+    .card {
+        padding: 40px 25px;
+    }
+    .search input {
+        padding: 10px 5px;
+        height: 40px;
+        
+
+    }
+
+    .search button {
+        padding: 10px 15px;
+        height: 40px;
+        font-size: 14px;
+
+
+    }
+
+    .search img{
+        width: 20px;
+        height: 20px;
+    }
+    .weather h1 {
+        font-size: 60px;
+    }
+
+    .weather h2 {
+        font-size: 35px;
+    }
+
+    .weather-icon {
+        width: 150px;
+    }
+
+    .details {
+        flex-direction: column;
+        margin: 5% 0 0; 
+        margin-top: 10%;
+    }
+    .details .col img{
+        width: 30px;
+
+    }
+    .col {
+        margin-bottom: 20px;
+    }
+
+    .col:nth-child(2) {
+        margin-left: 0;
+    }
+
 }
